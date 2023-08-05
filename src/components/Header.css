@@ -1,10 +1,25 @@
 .header{
+  width: 600px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header.light{
-  background-color: #f4f4f4;
-  color: #242424;
+.header .header-title{
+  color: #646cff;
+}
+.header .header-title:hover{
+  color: #747bff;
+}
+
+.header-links ul{
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.header-links ul li{
+  margin-left: 16px;
 }

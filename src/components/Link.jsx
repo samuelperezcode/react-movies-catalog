@@ -1,6 +1,12 @@
-function Link({to}) {
+import {navigate} from '../services/navigate'
+
+function Link({to, target, ...props}) {
+  const handleClick = (event) => {
+    event.preventDefault()
+    navigate(to)
+  }
   return (
-    <a href={to} />
+    <a onClick={handleClick} href={to} target={target} {...props} />
   )
 }
 

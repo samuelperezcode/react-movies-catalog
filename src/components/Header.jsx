@@ -1,17 +1,21 @@
-import { useState } from "react"
 import './Header.css'
+import Link from "./Link"
 
 function Header() {
-  const [lightMode, setLightMode] = useState(false)
   const handleClick = () => {
-    setLightMode(!lightMode)
+
   }
-  const headerClass = lightMode ? 'header light' : 'header'
-  const btnText = lightMode ? 'Dark Mode' : 'Light Mode'
   return (
-    <div className={`${headerClass}`}>
-      <h2>Film-Library</h2>
-      <button onClick={handleClick} type="button">{btnText}</button>
+    <div className='header' >
+      <h2><Link className='header-title' to={'/'}>Film-Library</Link></h2>
+
+      <div className="header-links">
+        <ul>
+          <li><Link to={'/discover'}>Discover</Link></li>
+          <li><Link to={'/about'}>About</Link></li>
+          <li><button onClick={handleClick} type="button">Light Mode</button></li>
+        </ul>
+      </div>
     </div>
   )
 }

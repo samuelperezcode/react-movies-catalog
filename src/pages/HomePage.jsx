@@ -4,6 +4,8 @@ function HomePage() {
     <main>
       <h1>HomePage</h1>
       <Link to={'/about'}>Go to About</Link>
+      <Link to={'/discover'}>Go to discover</Link>
+      <Link to={'/favorites'}>Go to favorites</Link>
     </main>
   )
 }

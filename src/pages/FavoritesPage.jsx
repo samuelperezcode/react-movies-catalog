@@ -1,11 +1,11 @@
 import Link from "../components/Link"
-function AboutPage() {
+function FavoritesPage() {
   return (
     <main>
-      <h1>AboutPage</h1>
+      <h1>FavoritesPage</h1>
       <Link to={'/'}>Go Home</Link>
     </main>
   )
 }
 
-export default AboutPage
+export default FavoritesPage
