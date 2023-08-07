@@ -5,7 +5,7 @@ import FavoritesPage from './pages/FavoritesPage'
 import AboutPage from './pages/AboutPage'
 import Header from './components/Header'
 import './App.css'
-import { EVENTS } from './constants/events'
+import { EVENTS } from './constants/const'
 
 function App() {
   const [currentPath, setCurrentPath] = useState(window.location.pathname)

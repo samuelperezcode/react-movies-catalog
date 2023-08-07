@@ -6,7 +6,7 @@ function Header() {
 
   }
   return (
-    <div className='header' >
+    <header className='header' >
       <h2><Link className='header-title' to={'/'}>Film-Library</Link></h2>
 
       <div className="header-links">
@@ -16,7 +16,7 @@ function Header() {
           <li><button onClick={handleClick} type="button">Light Mode</button></li>
         </ul>
       </div>
-    </div>
+    </header>
   )
 }
 

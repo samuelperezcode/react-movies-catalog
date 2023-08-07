@@ -1,0 +1,11 @@
+{
+  "lang":[
+    {
+      "Hero":{
+        "title": "Welcome to Movies-Catalog",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius aut quod sunt! Minus eaque asperiores officia dignissimos quaerat suscipit in?",
+        "btnText":"DISCOVER MOVIES"
+      }
+    }
+  ]
+}

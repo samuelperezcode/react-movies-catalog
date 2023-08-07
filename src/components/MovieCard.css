@@ -1,0 +1,35 @@
+.movie-card{
+  width: 200px;
+  height: 300px;
+
+  background-color: #444;
+  border-radius: 1.5rem;
+  position: relative;
+  scroll-snap-align: center;
+}
+.movie-card .movie-card--img{
+  width: 200px;
+  height: 140px;
+  background-color: #f4f4f4;
+  border-radius: 1.5rem  1.5rem 0 0;
+}
+
+.movie-card .movie-card--content{
+  text-align: start;
+  margin: 16px 8px;
+}
+
+.movie-card .movie-card--content p{
+  margin-top: 8px;
+  color: #eaeaea;
+}
+
+.movie-card .movie-card--content .tags{
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.movie-card .movie-card--content .tags span{
+  color: #aaa;
+}

@@ -1,7 +1,9 @@
 .header{
-  width: 600px;
   display: flex;
   justify-content: space-between;
+  margin: 1rem 0;
+  padding: 0 1.5rem;
+  width: 100%;
   align-items: center;
 }
 

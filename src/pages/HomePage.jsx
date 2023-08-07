@@ -1,11 +1,19 @@
-import Link from "../components/Link"
+import Footer from "../components/Footer"
+import Form from "../components/Form"
+import Hero from "../components/Hero"
+import ListMoviesHorizontal from "../components/ListMoviesHorizontal"
+
+import {lang} from '../mocks/lang.json'
+
+
 function HomePage() {
   return (
     <main>
-      <h1>HomePage</h1>
-      <Link to={'/about'}>Go to About</Link>
-      <Link to={'/discover'}>Go to discover</Link>
-      <Link to={'/favorites'}>Go to favorites</Link>
+      <Hero title={lang[0].Hero.title} desc={lang[0].Hero.desc} btnText={lang[0].Hero.btnText}/>
+      <ListMoviesHorizontal topic={'Recent Movies'} />
+      <ListMoviesHorizontal topic={'Popular Movies'} />
+      <Form />
+      <Footer />
     </main>
   )
 }

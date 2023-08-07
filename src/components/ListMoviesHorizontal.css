@@ -1,0 +1,21 @@
+.horizontal-list{
+  margin: 0 32px;
+  text-align: start;
+  min-width: 320px;
+
+  height: auto;
+  padding-bottom: 70px;
+}
+
+.horizontal-list .horizontal-list--topic{
+  margin: 16px 0;
+  color: #aaa;
+}
+
+.horizontal-list .horizontal-list--slider{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 50px;
+  height: auto;
+
+}
