@@ -1,5 +1,4 @@
 .horizontal-list{
-  margin: 0 32px;
   text-align: start;
   min-width: 320px;
 
@@ -14,8 +13,8 @@
 
 .horizontal-list .horizontal-list--slider{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-  gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(170px,1fr));
+  gap: 16px;
   height: auto;
 
 }

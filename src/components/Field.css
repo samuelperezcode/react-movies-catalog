@@ -1,0 +1,13 @@
+.field-container{
+  display: flex;
+  flex-direction: column;
+}
+.field-container label{
+  color: #aaa;
+  font-size: 16px;
+}
+.field-container input{
+  padding: .7rem 0.3rem;
+  font-size: 16px;
+
+}

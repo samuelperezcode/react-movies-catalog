@@ -1,0 +1,19 @@
+.contact-section{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 2px solid #444;
+  border-radius: 1rem;
+  text-align: start;
+  gap: 16px;
+}
+.contact-section .contact-btn{
+  margin-top: 1rem;
+  color: #127812;
+}
+
+.contact-section .contact-btn:hover {
+  border-color: #127812;
+}

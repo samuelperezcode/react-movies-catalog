@@ -1,4 +1,3 @@
-import Footer from "../components/Footer"
 import Form from "../components/Form"
 import Hero from "../components/Hero"
 import ListMoviesHorizontal from "../components/ListMoviesHorizontal"
@@ -10,10 +9,11 @@ function HomePage() {
   return (
     <main>
       <Hero title={lang[0].Hero.title} desc={lang[0].Hero.desc} btnText={lang[0].Hero.btnText}/>
-      <ListMoviesHorizontal topic={'Recent Movies'} />
-      <ListMoviesHorizontal topic={'Popular Movies'} />
-      <Form />
-      <Footer />
+      <div className="container">
+        <ListMoviesHorizontal topic={'Recent Movies'} />
+        <ListMoviesHorizontal topic={'Popular Movies'} />
+        <Form />
+      </div>
     </main>
   )
 }
