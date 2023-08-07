@@ -1,5 +1,7 @@
 import Link from "../components/Link"
+
 function DiscoverPage() {
+  
   return (
     <main>
       <h1>DiscoverPage</h1>

@@ -32,7 +32,7 @@ function App() {
       Component: FavoritesPage
     },
     {
-      path:'/discover/:movie/',
+      path:'/detail/:query/',
       Component: DetailPage
     }
   ]

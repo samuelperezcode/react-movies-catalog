@@ -1,8 +1,15 @@
 import Link from "../components/Link"
-function DetailPage() {
+import { useEffect } from "react"
+
+function DetailPage({routeParams}) {
+  
+  useEffect(()=>{
+    document.title = `${routeParams.query}`
+    fetch(`api/${routeParams.query}`)
+  },[])
   return (
     <main>
-      <h1>DetailPage</h1>
+      <h1>{routeParams.query.toUpperCase()} DetailPage</h1>
       <Link to={'/'}>Go Home</Link>
     </main>
   )
