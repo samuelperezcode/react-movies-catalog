@@ -1,11 +1,10 @@
-import Link from "../components/Link"
+import Link from '../components/Link'
 
-function DiscoverPage() {
-  
+function DiscoverPage () {
   return (
     <main>
       <h1>DiscoverPage</h1>
-      <Link to={'/'}>Go Home</Link>
+      <Link to='/'>Go Home</Link>
     </main>
   )
 }
