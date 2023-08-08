@@ -8,6 +8,7 @@ import Page404 from './pages/Page404'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Router from './components/Router'
+import Route from './components/Route'
 
 import './App.css'
 
@@ -15,7 +16,7 @@ import './App.css'
 function App() {
   
   const routes = [
-    {
+    /* {
       path:'/',
       Component: HomePage
     },
@@ -26,7 +27,7 @@ function App() {
     {
       path:'/discover',
       Component: DiscoverPage
-    },
+    }, */
     {
       path: '/favorites',
       Component: FavoritesPage
@@ -40,7 +41,11 @@ function App() {
   return (
     <>
       <Header />
-        <Router routes={routes} defaultComponent={Page404} />
+        <Router routes={routes} defaultComponent={Page404}>
+          <Route path='/' Component={HomePage} />
+          <Route path='/about' Component={AboutPage} />
+          <Route path='/discover' Component={DiscoverPage} />
+        </Router>
       <Footer />
     </>
   )
