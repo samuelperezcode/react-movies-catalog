@@ -1,10 +1,17 @@
-import Link from '../components/Link'
+/* import Link from '../components/Link' */
+import Movies from '../components/Movies'
+import SearchBar from '../components/SearchBar'
+import { useMovies } from '../hooks/useMovies'
 
 function DiscoverPage () {
+  const { movies } = useMovies()
   return (
     <main>
-      <h1>DiscoverPage</h1>
-      <Link to='/'>Go Home</Link>
+      <h1 style={{ paddingTop: '2rem' }}>Discover Best Movies</h1>
+      <SearchBar />
+      <div className='container'>
+        <Movies listMovies={movies} />
+      </div>
     </main>
   )
 }
