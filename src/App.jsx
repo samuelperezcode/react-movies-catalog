@@ -12,9 +12,7 @@ import Route from './components/Route'
 
 import './App.css'
 
-
-function App() {
-  
+function App () {
   const routes = [
     /* {
       path:'/',
@@ -33,7 +31,7 @@ function App() {
       Component: FavoritesPage
     },
     {
-      path:'/detail/:query/',
+      path: '/detail/:query/',
       Component: DetailPage
     }
   ]
@@ -41,11 +39,11 @@ function App() {
   return (
     <>
       <Header />
-        <Router routes={routes} defaultComponent={Page404}>
-          <Route path='/' Component={HomePage} />
-          <Route path='/about' Component={AboutPage} />
-          <Route path='/discover' Component={DiscoverPage} />
-        </Router>
+      <Router routes={routes} defaultComponent={Page404}>
+        <Route path='/' Component={HomePage} />
+        <Route path='/about' Component={AboutPage} />
+        <Route path='/discover' Component={DiscoverPage} />
+      </Router>
       <Footer />
     </>
   )

@@ -1,8 +1,6 @@
-function Movies() {
+function Movies () {
   return (
-    <div className="movies-container">
-      
-    </div>
+    <div className='movies-container' />
   )
 }
 

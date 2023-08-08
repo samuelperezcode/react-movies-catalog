@@ -1,4 +1,4 @@
-function Route({path, Component}) {
+function Route ({ path, Component }) {
   return null
 }
 

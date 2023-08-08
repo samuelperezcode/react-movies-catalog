@@ -1,12 +1,12 @@
 import './MovieCard.css'
 
-function MovieCard() {
+function MovieCard () {
   return (
-    <article className="movie-card">
-      <figure className="movie-card--img">
-        <img src="" alt="" />
+    <article className='movie-card'>
+      <figure className='movie-card--img'>
+        <img src='' alt='' />
       </figure>
-      <div className="movie-card--content">
+      <div className='movie-card--content'>
         <h3>Movie Title</h3>
         <p>Triller</p>
         <p>Mon 12, July</p>
@@ -14,7 +14,7 @@ function MovieCard() {
           <span>Views 23k</span>
           <span>Likes 💖</span>
         </div>
-        
+
       </div>
     </article>
   )

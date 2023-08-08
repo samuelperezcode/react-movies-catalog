@@ -1,11 +1,11 @@
-import MovieCard from "./MovieCard"
+import MovieCard from './MovieCard'
 import './ListMoviesHorizontal.css'
 
-function ListMoviesHorizontal({topic}) {
+function ListMoviesHorizontal ({ topic }) {
   return (
-    <section className="horizontal-list">
-      <h3 className="horizontal-list--topic">{topic}</h3>
-      <section className="horizontal-list--slider">
+    <section className='horizontal-list'>
+      <h3 className='horizontal-list--topic'>{topic}</h3>
+      <section className='horizontal-list--slider'>
         <MovieCard />
         <MovieCard />
         <MovieCard />

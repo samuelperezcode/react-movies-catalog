@@ -1,10 +1,10 @@
 import './Field.css'
 
-function Field({id, fieldName}) {
+function Field ({ id, fieldName }) {
   return (
-    <div className="field-container">
+    <div className='field-container'>
       <label htmlFor={id}>{fieldName}:</label>
-      <input type="text"  name={id} />
+      <input type='text' name={id} />
     </div>
   )
 }
