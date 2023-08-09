@@ -7,7 +7,7 @@ import { lang } from '../mocks/lang.json'
 function HomePage () {
   return (
     <main>
-      <Hero title={lang[0].Hero.title} desc={lang[0].Hero.desc} btnText={lang[0].Hero.btnText} />
+      <Hero title={lang[0].Hero.title} desc={lang[0].Hero.desc} btnText={lang[0].Hero.btnText} href='/discover' />
       <div className='container'>
         <ListMoviesHorizontal topic='Recent Movies' />
         <ListMoviesHorizontal topic='Popular Movies' />

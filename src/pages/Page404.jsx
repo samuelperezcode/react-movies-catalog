@@ -1,6 +1,8 @@
+import Hero from '../components/Hero'
+
 function Page404 () {
   return (
-    <h1>404</h1>
+    <Hero title='404' desc='Page Not Found' btnText='GO BACK' href='/' />
   )
 }
 
