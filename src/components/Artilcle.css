@@ -1,0 +1,11 @@
+.article{
+  margin: 64px auto;
+  text-align: start;
+}
+.article .article-title + .article-content{
+  margin-top: 16px;
+  color: #aaa;
+}
+.article-title{
+  color: #188bb5;
+}

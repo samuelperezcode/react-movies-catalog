@@ -5,7 +5,7 @@ function Hero ({ title, desc, btnText }) {
     <section className='hero-container'>
       <div className='hero-content'>
         <h1 className='hero-content--title'>{title}</h1>
-        <p className='hero-content--desc'>{desc}</p>
+        <h3 className='hero-content--desc'>{desc}</h3>
       </div>
       <Link className='hero-btn' to='/discover'>{btnText}</Link>
     </section>

@@ -5,7 +5,7 @@ import { useMovies } from '../hooks/useMovies'
 
 function DiscoverPage () {
   const { movies, getMovies } = useMovies()
-  console.log(movies)
+
   return (
     <main>
       <h1 style={{ paddingTop: '2rem' }}>Discover Best Movies</h1>

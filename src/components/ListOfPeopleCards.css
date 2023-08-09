@@ -1,0 +1,36 @@
+.employees-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.person-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.person-card--photo{
+  margin: 0 auto;
+  width: 50%;
+  border-radius: 999px;
+}
+.person-card--content{
+  width: 75%;
+  margin: 16px auto;
+}
+.person-card--content h2{
+  color: #188bb5;
+}
+.person-card--content h5{
+  color: #e1e1e1;
+}
+.person-card--content p{
+  color: #aaa;
+}
+
+@media(max-width:764px){
+  .employees-container{
+    flex-direction: column;
+    gap: 32px;
+  }
+}
