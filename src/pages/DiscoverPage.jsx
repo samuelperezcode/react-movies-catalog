@@ -4,11 +4,12 @@ import SearchBar from '../components/SearchBar'
 import { useMovies } from '../hooks/useMovies'
 
 function DiscoverPage () {
-  const { movies } = useMovies()
+  const { movies, getMovies } = useMovies()
+  console.log(movies)
   return (
     <main>
       <h1 style={{ paddingTop: '2rem' }}>Discover Best Movies</h1>
-      <SearchBar />
+      <SearchBar fn={getMovies} />
       <div className='container'>
         <Movies listMovies={movies} />
       </div>

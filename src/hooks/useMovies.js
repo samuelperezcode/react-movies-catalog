@@ -1,7 +1,12 @@
+import { useContext, useState } from 'react'
 import movies from '../mocks/movies.json'
+import { MoviesContext } from '../context/movies'
 
 export function useMovies () {
-  const listMovies = movies.movies
+  const [moviesData, setMoviesData] = useState({})
+  const { query } = useContext(MoviesContext)
+
+  const listMovies = moviesData.movies
   const mappedMovies = listMovies?.map(movie => ({
     id: movie.imdbID,
     title: movie.Title,
@@ -12,5 +17,13 @@ export function useMovies () {
     year: movie.Year
   }))
 
-  return { movies: mappedMovies }
+  const getMovies = () => {
+    if (query) {
+      setMoviesData(movies)
+    } else {
+      setMoviesData({ result: 'Empty' })
+    }
+  }
+
+  return { movies: mappedMovies, getMovies }
 }

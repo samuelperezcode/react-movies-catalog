@@ -8,6 +8,8 @@ import Router from './components/Router'
 import Route from './components/Route'
 import Loader from './components/Loader'
 
+import { MoviesProvider } from './context/movies'
+
 import './App.css'
 // Dinamic import
 const DiscoverPage = lazy(() => import('./pages/DiscoverPage'))
@@ -41,7 +43,7 @@ function App () {
   ]
 
   return (
-    <>
+    <MoviesProvider>
       <Header />
       <Suspense fallback={<Loader />}>
         <Router routes={routes} defaultComponent={Page404}>
@@ -51,7 +53,7 @@ function App () {
         </Router>
       </Suspense>
       <Footer />
-    </>
+    </MoviesProvider>
   )
 }
 
