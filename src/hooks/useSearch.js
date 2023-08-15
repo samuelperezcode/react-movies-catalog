@@ -2,7 +2,7 @@ import { useContext, useEffect, useRef, useState } from 'react'
 import { MoviesContext } from '../context/movies'
 
 export const useSearch = () => {
-  const { query, setQuery } = useContext(MoviesContext)
+  const { query, setQuery, sort, setSort } = useContext(MoviesContext)
   const [error, setError] = useState(null)
   const isFirstInput = useRef(true)
 
@@ -24,5 +24,5 @@ export const useSearch = () => {
     setError(null)
   }, [query])
 
-  return { query, setQuery, error }
+  return { query, setQuery, error, sort, setSort }
 }

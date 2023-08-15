@@ -2,7 +2,7 @@ import './MovieCard.css'
 
 function MovieCard ({ title, type, year, likes, poster }) {
   return (
-    <article className='movie-card'>
+    <a href='#' className='movie-card'>
       <figure className='movie-card--img'>
         <img src={poster} alt={`Poster of ${title}`} />
       </figure>
@@ -15,7 +15,7 @@ function MovieCard ({ title, type, year, likes, poster }) {
         <span>Fav ⭐</span>
         <p><span>Likes:</span> {likes}</p>
       </div>
-    </article>
+    </a>
   )
 }
 

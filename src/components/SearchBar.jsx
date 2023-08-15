@@ -2,22 +2,27 @@ import './SearchBar.css'
 import { useSearch } from '../hooks/useSearch'
 
 function SearchBar ({ fn }) {
-  const { query, setQuery, error } = useSearch()
+  const { query, setQuery, error, sort, setSort } = useSearch()
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    fn()
+    fn({ query })
   }
+
+  const handleSort = () => {
+    setSort(!sort)
+  }
+
   const handleChange = (e) => {
     const newQuery = e.target.value
     if (newQuery.startsWith(' ')) return
     setQuery(newQuery)
-    fn()
   }
 
   return (
     <form action='' className='search-bar' onSubmit={handleSubmit}>
       <input onChange={handleChange} className='search-bar--input' type='text' name='query' value={query} placeholder='Avengers,Barbie...' />
+      <input type='checkbox' checked={sort} onChange={handleSort} />
       <input className='search-bar--btn' type='submit' value='Search' />
       {error && <p style={{ color: 'red' }}>{error}</p>}
     </form>

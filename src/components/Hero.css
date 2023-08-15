@@ -1,11 +1,17 @@
 .hero-container{
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: #077ca7;
+  background: linear-gradient(
+    to right,
+    rgb(0 0 0 / .8), rgb(0 0 0 / 0)
+  ),url('../assets/hero.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-content{
@@ -18,7 +24,7 @@
 
 .hero-btn{
   padding: 0.7rem 1.5rem;
-  background-color: #222;
+  background-color: var(--secondary-color);
   border-radius: .5rem;
 }
 
