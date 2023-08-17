@@ -1,5 +1,4 @@
 /* import Link from '../components/Link' */
-import Hero from '../components/Hero'
 import { Article, ArticleContent } from '../components/Article'
 import { ListOfPeopleCards } from '../components/ListOfPeopleCards'
 
@@ -36,7 +35,6 @@ function AboutPage () {
   ]
   return (
     <main>
-      <Hero title='Film Library' desc='La MAYOR libreria del país, actualizada y recomendada. TODO lo que necesitas, para disfrute familiar, como un CINE, pero desde la comoiad de tu HOGAR. ' btnText='GET IN TOUCH' href='#' />
       <section className='container'>
         <Article>
           <ArticleContent title={articles.objective.title} content={articles.objective.content} />

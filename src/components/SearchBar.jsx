@@ -1,8 +1,15 @@
 import './SearchBar.css'
 import { useSearch } from '../hooks/useSearch'
+import debounce from 'just-debounce-it'
+import { useCallback } from 'react'
 
 function SearchBar ({ fn }) {
   const { query, setQuery, error, sort, setSort } = useSearch()
+
+  const debounceGetMovies = useCallback(
+    debounce(search =>
+      fn({ query: search }), 400)
+    , [])
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -17,6 +24,7 @@ function SearchBar ({ fn }) {
     const newQuery = e.target.value
     if (newQuery.startsWith(' ')) return
     setQuery(newQuery)
+    debounceGetMovies(newQuery)
   }
 
   return (
